@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Спатифиллум</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <!-- Подключаем Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+  <!-- Навигация -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="../index.html">Домашние растения</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="../catalog.html">Каталог</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Заголовок страницы -->
+  <header class="plant-header py-5">
+    <div class="container text-center">
+      <h1 class="display-4">Спатифиллум</h1>
+      <p class="lead">Элегантное растение, известное как "женское счастье".</p>
+    </div>
+  </header>
+
+  <!-- Основная информация о растении -->
+  <section class="plant-info py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="../img/spathiphyllum_page.jpg" alt="Спатифиллум 1" class="img-fluid rounded"></div>
+              <div class="swiper-slide"><img src="../img/spathiphyllum_page_1.jpg" alt="Спатифиллум 2" class="img-fluid rounded"></div>
+              <div class="swiper-slide"><img src="../img/spathiphyllum_page_2.jpg" alt="Спатифиллум 3" class="img-fluid rounded"></div>
+            </div>
+            <div class="swiper-button-next custom-swiper-button"></div>
+            <div class="swiper-button-prev custom-swiper-button"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h2>Описание</h2>
+          <p>
+            Спатифиллум – популярное комнатное растение с белыми цветами, известное также как "женское счастье".  Ценится за неприхотливость и декоративный вид.
+          </p>
+          <h2>Уход</h2>
+          <ul>
+            <li><strong>Освещение:</strong> Предпочитает полутень или рассеянный свет. Избегайте прямых солнечных лучей.</li>
+            <li><strong>Полив:</strong> Регулярный, поддерживайте почву влажной, но не переувлажняйте. Дайте верхнему слою почвы немного просохнуть между поливами.</li>
+            <li><strong>Влажность:</strong> Любит высокую влажность, регулярно опрыскивайте листья.</li>
+            <li><strong>Температура:</strong> Идеальная температура - 18-24°C.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer class="bg-light text-center py-4">
+    <div class="container">
+      <p>&copy; 2025 База знаний о домашних растениях</p>
+    </div>
+  </footer>
+
+  <!-- Подключаем Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Подключаем Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+</html>

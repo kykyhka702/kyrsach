@@ -1,0 +1,228 @@
+// Основные цвета
+$primary-color: #4CAF50;
+$accent-color: #81C784;
+$background-color: #F1F8E9;
+$text-color: #424242;
+$heading-color: #2E7D32;
+$button-color: #388E3C;
+$button-hover-color: #66BB6A;
+
+// Шрифты
+body {
+  font-family: 'Lora', serif;
+  color: $text-color;
+  background-color: $background-color;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: $heading-color;
+}
+
+// Навигация
+.navbar {
+  background-color: $primary-color !important;
+}
+
+.btn-outline-success {
+  color: white;
+}
+
+.navbar-brand, .nav-link {
+  color: white !important;
+}
+
+.nav-link:hover {
+  color: $accent-color !important;
+}
+
+// Стили для блока с результатами поиска
+#search-results {
+  position: absolute;
+  z-index: 1000;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 300px;
+  overflow-y: auto;
+  width: 54%;
+}
+
+// Стили для карточек в результатах поиска
+.search-result-card {
+  transition: none;
+  border-bottom: 1px solid #eee;
+
+  &:hover {
+    transform: none;
+    background-color: #f8f9fa;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+// Hero-блок
+.hero-section {
+  background-image: url('https://via.placeholder.com/1200x400');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+  h1 {
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+}
+
+// Карточки растений
+.card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  .card-img-top {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .card-title {
+    color: $heading-color;
+  }
+
+  .card-text {
+    color: $text-color;
+  }
+}
+
+.btn-primary {
+  background-color: $button-color;
+  border: none;
+
+  &:hover {
+    background-color: $button-hover-color;
+  }
+}
+
+// Футер
+footer {
+  background-color: $primary-color;
+  color: black;
+  padding: 20px 0;
+}
+
+// Стили для блока "О растениях"
+.about-plants {
+  background-color: white;
+
+  h2 {
+    color: $heading-color;
+    font-weight: bold;
+  }
+
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: $text-color;
+  }
+
+  ul {
+    font-size: 1.1rem;
+    color: $text-color;
+
+    i {
+      color: $primary-color;
+    }
+  }
+
+  img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 80%;
+  }
+}
+
+// Стили для призыва к действию
+.popular-plants {
+  .text-center {
+    margin-top: 40px;
+
+    p {
+      font-size: 1.2rem;
+      color: $text-color;
+      margin-bottom: 20px;
+    }
+  }
+
+  .btn-success {
+    background-color: $primary-color;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1.1rem;
+
+    &:hover {
+      background-color: $button-hover-color;
+    }
+  }
+}
+
+.swiper {
+  height: 500px;
+
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.my-4 {
+  margin-top: 1.1rem !important;
+}
+
+// Кастомизация FullCalendar
+.fc-header-toolbar {
+  background-color: $primary-color;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.fc-button {
+  background-color: $accent-color !important;
+  border: none !important;
+  color: white !important;
+
+  &:hover {
+    background-color: $button-hover-color !important;
+  }
+}
+
+.fc-daygrid-event {
+  background-color: $primary-color;
+  border: none;
+  padding: 2px 4px;
+  border-radius: 3px;
+
+  &:hover {
+    background-color: $button-color;
+  }
+}
+
+.fc-day-today {
+  background-color: lighten($accent-color, 20%) !important;
+}
+
+.fc-col-header-cell {
+  background-color: $accent-color;
+  color: white;
+}
+
+.fc-daygrid-day {
+  border-color: #E0E0E0;
+}

@@ -1,0 +1,195 @@
+body {
+  font-family: "Lora", serif;
+  color: #424242;
+  background-color: #F1F8E9;
+}
+
+h1, h2, h3 {
+  font-family: "Playfair Display", serif;
+  color: #2E7D32;
+}
+
+.navbar {
+  background-color: #4CAF50 !important;
+}
+
+.btn-outline-success {
+  color: white;
+}
+
+.navbar-brand, .nav-link {
+  color: white !important;
+}
+
+.nav-link:hover {
+  color: #81C784 !important;
+}
+
+#search-results {
+  position: absolute;
+  z-index: 1000;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 300px;
+  overflow-y: auto;
+  width: 54%;
+}
+
+.search-result-card {
+  -webkit-transition: none;
+  transition: none;
+  border-bottom: 1px solid #eee;
+}
+.search-result-card:hover {
+  -webkit-transform: none;
+          transform: none;
+  background-color: #f8f9fa;
+}
+.search-result-card:last-child {
+  border-bottom: none;
+}
+
+.hero-section {
+  background-image: url("https://via.placeholder.com/1200x400");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.hero-section h1 {
+  font-weight: bold;
+}
+.hero-section p {
+  font-size: 1.25rem;
+}
+
+.card {
+  border: none;
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card .card-img-top {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card .card-title {
+  color: #2E7D32;
+}
+.card .card-text {
+  color: #424242;
+}
+
+.btn-primary {
+  background-color: #388E3C;
+  border: none;
+}
+.btn-primary:hover {
+  background-color: #66BB6A;
+}
+
+footer {
+  background-color: #4CAF50;
+  color: black;
+  padding: 20px 0;
+}
+
+.about-plants {
+  background-color: white;
+}
+.about-plants h2 {
+  color: #2E7D32;
+  font-weight: bold;
+}
+.about-plants p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #424242;
+}
+.about-plants ul {
+  font-size: 1.1rem;
+  color: #424242;
+}
+.about-plants ul i {
+  color: #4CAF50;
+}
+.about-plants img {
+  -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  height: 80%;
+}
+
+.popular-plants .text-center {
+  margin-top: 40px;
+}
+.popular-plants .text-center p {
+  font-size: 1.2rem;
+  color: #424242;
+  margin-bottom: 20px;
+}
+.popular-plants .btn-success {
+  background-color: #4CAF50;
+  border: none;
+  padding: 10px 30px;
+  font-size: 1.1rem;
+}
+.popular-plants .btn-success:hover {
+  background-color: #66BB6A;
+}
+
+.swiper {
+  height: 500px;
+}
+.swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.my-4 {
+  margin-top: 1.1rem !important;
+}
+
+.fc-header-toolbar {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.fc-button {
+  background-color: #81C784 !important;
+  border: none !important;
+  color: white !important;
+}
+.fc-button:hover {
+  background-color: #66BB6A !important;
+}
+
+.fc-daygrid-event {
+  background-color: #4CAF50;
+  border: none;
+  padding: 2px 4px;
+  border-radius: 3px;
+}
+.fc-daygrid-event:hover {
+  background-color: #388E3C;
+}
+
+.fc-day-today {
+  background-color: #c8e6c9 !important;
+}
+
+.fc-col-header-cell {
+  background-color: #81C784;
+  color: white;
+}
+
+.fc-daygrid-day {
+  border-color: #E0E0E0;
+}
